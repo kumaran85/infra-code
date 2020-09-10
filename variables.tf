@@ -8,7 +8,14 @@ variable "region" {
   default = "eu-west-1"
 }
 
-variable "image" {
-   description = "Image will take from Module variables.tf"
-}
+#variable "image" {
+  # description = "Image will take from Module variables.tf"
+#}
 
+#variable "sg" {
+#  description = "map the bastion SG using -var command"
+#}
+
+variable "env" {
+   default = "proxy"
+}

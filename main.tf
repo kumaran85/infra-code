@@ -1,8 +1,8 @@
 provider "aws" {
-  #profile = "${var.profile}"
-  assume_role {
-    role_arn = "arn:aws:iam::608014515287:role/a204161-CloudOps"
-  } 
+  profile = "${var.profile}"
+  #assume_role {
+   # role_arn = "arn:aws:iam::608014515287:role/a204161-CloudOps"
+ # } 
   
    region = "${var.region}"
 }
@@ -11,5 +11,5 @@ provider "aws" {
 
 module "local" {
   source = "./resources"
-  image = "${var.image}"
+  #image = "${var.image}"
 }
