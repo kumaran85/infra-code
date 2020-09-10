@@ -1,6 +1,6 @@
 variable "profile" {
   description = "stored crdentials from .aws dir"
-  default = "test"
+  default = "tr-fr"
 }
 
 variable "region" {
