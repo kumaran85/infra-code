@@ -1,0 +1,2 @@
+var = terraform state list
+terraform state show '$var'
