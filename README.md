@@ -9,3 +9,7 @@ While using module, variable can be passed in below ways.
 # How to use assume role
 
 To use assume role, you need to have sts:AssumeRole permission across the accounts.
+
+output file fetching vaule from sub-module ouput file. Like If you have outout file with module, call the right value from the sub-module. 
+
+ If sub-module output is private-ip, then call this value in the main outputs.tf with module extenstion.

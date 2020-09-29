@@ -1,9 +1,9 @@
 variable "image" {
   type = string 
-  default = "ami-sub"
+  default = "ami-089142d502063d7f8"
 }
 
 variable "subnet" {
-  default = "subnet-03ed9ae6c4e07cd61"
+  default = "subnet-0a84f99e1edbf9066"
 }
 

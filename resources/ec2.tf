@@ -4,7 +4,7 @@ resource "aws_instance" "instan" {
    ami = "${var.image}"
    instance_type = "t2.micro"
    subnet_id = "${var.subnet}"
-   #vpc_security_group_ids = "${var.sg}"
+   vpc_security_group_ids = ["sg-0450a2eeea7f130f9"]
    user_data = <<-EOF
                 #!/bin/bash
                 useradd a204161-CloudOps
@@ -12,10 +12,11 @@ resource "aws_instance" "instan" {
                 EOF
 
    tags = {
-     Name = "a204161-CloudOps_testing"
+     Name = "a204161-CloudOps-testing"
      "tr:application-asset-insight-id" = "a204161-CloudOps"
-     "tr:environment" = "Prod"
+     "tr:environment" = "pre-prod"
      "tr:resource-owner" = "Kumaran.M"
+     "Action" = "To be deleted"
    }
 
 }  

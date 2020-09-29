@@ -1,3 +1,3 @@
-output "private-ip" {
-   value = "module.local.instan.private_ip"
+output "private-ip-address" {
+   value = "${module.local.private-ip}"
 }

@@ -3,7 +3,6 @@ provider "aws" {
   #assume_role {
    # role_arn = "arn:aws:iam::608014515287:role/a204161-CloudOps"
  # } 
-  
    region = "${var.region}"
 }
 
