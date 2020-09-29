@@ -1,2 +1,7 @@
 var = terraform state list
 terraform state show '$var'
+
+terraform workspace new test
+terraform workspace select test
+terraform workspace list 
+terraform workspace delete list
