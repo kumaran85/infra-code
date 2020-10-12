@@ -1,7 +1,7 @@
 provider "aws" {
   profile = "${var.profile}"
   #assume_role {
-   # role_arn = "arn:aws:iam::608014515287:role/a204161-CloudOps"
+   # role_arn = "arn:aws:iam::123456789102:role/terraform-admin"
  # } 
    region = "${var.region}"
 }

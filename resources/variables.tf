@@ -1,9 +1,10 @@
-variable "image" {
-  type = string 
-  default = "ami-089142d502063d7f8"
+locals {
+     tags = {
+       Name = "a204161-cloudOps-testing"
+       "tr:application-asset-insight-id" = "a204161-CloudOps"
+       "tr:environment" = "pre-prod"
+       "tr:resource-owner" = "Kumaran.M"
+       "Action" = "To be deleted"
+       "tr:resource-owner-role.id" = "a204161-cloudops-admin"
+     }
 }
-
-variable "subnet" {
-  default = "subnet-0a84f99e1edbf9066"
-}
-

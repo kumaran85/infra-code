@@ -13,3 +13,5 @@ To use assume role, you need to have sts:AssumeRole permission across the accoun
 output file fetching vaule from sub-module ouput file. Like If you have outout file with module, call the right value from the sub-module. 
 
  If sub-module output is private-ip, then call this value in the main outputs.tf with module extenstion.
+
+Ignore changes value taken from resources section as  attributes like ami_id, instance_type, 
